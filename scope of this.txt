@@ -1,0 +1,5 @@
+
+-'this' refers to an object a single object
+-'this'is usually used inside a function or method(a function defined in an object)
+-if used outsite a function or variable 'this' refers to global scope 
+-if 'this' is used in strict mode it returns 'undefined' when used in a global function or in an anonymous function that are not bound to any object

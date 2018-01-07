@@ -51,29 +51,19 @@ function getData (method,url) {
 
 
 getData('GET','http://jsonplaceholder.typicode.com/todos').then(function (data) {
-	console.log(data);
+	let todos = JSON.parse(data);
+	let output = '';
+	
+	for(let todo of todos){
+		output +=`<h2>${todo.title}</h2>
+		<p>${todo.completed}</p>
+		`;
+	}
+	document.getElementById('html_page').innerHTML=output;
+	// console.log(data);
+	
 }).catch(function (err) {
+	// catching errors
 	console.log(err);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
