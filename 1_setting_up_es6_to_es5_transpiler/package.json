@@ -1,0 +1,15 @@
+{
+  "name": "1_setting_up_es6_to_es5_transpiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  	"build": "babel --presets env src -d dist"
+  },
+  "author": "Awais",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}

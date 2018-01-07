@@ -1,0 +1,30 @@
+IMPORTANT POINTS
+
+*classes wasn't part of javascript till ES5
+*classes added in ES6
+
+--all browser don't fully support es6 so we need es6 transpiled to es5
+lets do it using babel
+first install node
+here is the way how you can install babel
+
+-go to https://babeljs.io/docs/setup/
+-click cli
+-run npm command to install 'babel-cli' and 'babel-preset-env'
+(npm install babel-cli babel-preset-env --save-dev)
+
+-create .babelrc and save with this code
+{
+  "presets": ["env"]
+}
+(using 'env' preset you can enable es2015 transforms) 
+
+
+-Defining dir for es6 code 'src' and telling babel to save compiled source to into 'dist'
+in package.json
+  "scripts": {
+  	"build": "babel --presets env src -d dist"
+  }
+
+
+-----for transpilation run "npm run build"  
